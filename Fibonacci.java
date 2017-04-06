@@ -18,7 +18,7 @@ public class Fibonacci {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int n, a, b, c;
+        int n, a, b, c, jml=1;
         Scanner sc = new Scanner(System.in);
         a=0;
         b=1;
@@ -32,7 +32,10 @@ public class Fibonacci {
             System.out.print(c+" ");
             a=b;
             b=c;
+            jml=jml+c;
         }
+        System.out.println();
+        System.out.print(c);
         
     }
 
